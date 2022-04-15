@@ -5,12 +5,6 @@
 }
 /* 변수로 저장하여 가져다 쓸 때 사용함 */
 
-a {
-  text-decoration: none;
-  color: black;
-}
-/* title의 링크부분만이 아닌 전체 링크부분에 
-효과를 넣지 않게 하기 위해서 a테그 전체에 적용시킴 */
 
 * {
   margin: 0;
@@ -23,6 +17,16 @@ html {
 }
 /* 브라우저마다 기본스타일이 있어서
 조금이라도다를 것을 최소화 시키기 위해 */
+a {
+  text-decoration: none;
+  color: black;
+}
+/* title의 링크부분만이 아닌 전체 링크부분에 
+효과를 넣지 않게 하기 위해서 a테그 전체에 적용시킴 */
+
+.blue{
+  color: var(--main-blue);
+}
 header {
   background-color: var(--light-grey);
 }
@@ -114,3 +118,9 @@ header {
   display: block;
 }
 /* dropdown 구역을 지나면 dropdown-content를 보이게한다. */
+
+@media only all and(max-width: 400px){
+  html{
+      font-size:9px ;
+  }
+}

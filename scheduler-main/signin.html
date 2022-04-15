@@ -29,6 +29,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/signin.css" />
   </head>
   <body>
     <header>
@@ -53,7 +54,7 @@
             <div class="signed">
               <div class="dropdown">
                 <div class="dropdown-button">
-                  안녕하세요 <span id="nickname">민지환</span>님.
+                  안녕하세요 <span id="nickname">홍길동</span>님.
                   <i class="fas fa-solid fa-caret-down"></i>
                 </div>
                 <!-- dropdown-button -->
@@ -70,7 +71,26 @@
         <!-- 끝나는 시점임을이렇게 표기하면 보기 쉽다. -->
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="inner">
+          <!-- 이너테그는 media쿼리 사용시를 위함이고 signin-container는 내부요소 다루기 위함 -->
+        <div class="signin-container">
+          <h1>안녕하세요<span class="blue">성공일정</span>입니다.</h1>
+          <div class="signin-form">
+              <input type="text" placeholder="아이디" id="email">
+              <input type="password" placeholder="password" id="password">
+              <input type="button" value="로그인" id="signin">
+              <div class="signup-container">
+                  <a href="#" id="signup">회원가입</a>
+              </div>
+              <!-- signup-container -->
+          </div>
+          <!-- signin-form -->
+        </div>
+        <!-- signin-container -->
+
+      </div>
+    </main>
     <footer>
       <div class="inner">
         <div class="footer-container">
